@@ -11,7 +11,6 @@ import net.minecraft.village.VillagerType;
 import net.minecraft.world.biome.Biome;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.spongepowered.asm.mixin.Unique;
 
 import java.util.Map;
 
@@ -26,8 +25,7 @@ public class BiomeTagVillagers implements ModInitializer {
     public static final TagKey<Biome> VILLAGER_SNOWY = of("villager_snowy");
     public static final TagKey<Biome> VILLAGER_SWAMP = of("villager_swamp");
     public static final TagKey<Biome> VILLAGER_TAIGA = of("villager_taiga");
-    @Unique
-    private static Map<TagKey<Biome>, VillagerType> BIOME_TAG_TO_TYPE =
+    private static final Map<TagKey<Biome>, VillagerType> BIOME_TAG_TO_TYPE =
             Util.make(Maps.newHashMap(), map -> {
                 map.put(VILLAGER_DESERT, DESERT);
                 map.put(VILLAGER_JUNGLE, JUNGLE);
@@ -41,13 +39,16 @@ public class BiomeTagVillagers implements ModInitializer {
     public void onInitialize() {
         log.info("Tag time :gun:!");
     }
-	@SuppressWarnings("unused")
+
+    @SuppressWarnings("unused")
     static void addType(TagKey<Biome> tag, VillagerType type) {
         BIOME_TAG_TO_TYPE.put(tag, type);
     }
+
     public static Map<TagKey<Biome>, VillagerType> getBiomeTagToType() {
         return BIOME_TAG_TO_TYPE;
     }
+
     private static TagKey<Biome> of(String id) {
         return TagKey.of(RegistryKeys.BIOME, Identifier.of(MODID, id));
     }
