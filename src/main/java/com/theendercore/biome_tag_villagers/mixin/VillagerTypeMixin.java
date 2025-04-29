@@ -16,11 +16,7 @@ import java.util.Map;
 import static com.theendercore.biome_tag_villagers.BiomeTagVillagers.getBiomeTagToType;
 
 @Mixin(VillagerType.class)
-public class VillagerTypeMixer {
-
-    @Shadow
-    @Final
-    public static VillagerType PLAINS;
+public class VillagerTypeMixin {
     @Unique
     private final static Random biome_tag$random = Random.create();
 
@@ -35,7 +31,7 @@ public class VillagerTypeMixer {
             return types.get(biome_tag$random.nextBetween(0, types.size() - 1));
         }
         if (Registries.VILLAGER_TYPE.getId(original).getNamespace().equals(Identifier.DEFAULT_NAMESPACE)) {
-            return PLAINS;
+            return VillagerType.PLAINS;
         }
         return original;
     }

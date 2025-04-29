@@ -7,7 +7,7 @@ discordServerInviteId = "KZ5Q364hEg"
 authors = ["TheEnderCore", "DuskAutumnStorm"]
 majorMinecraftVersion = "1.21"
 minecraftVersion = "1.21"
-fabricLoaderVersion = "0.15.11"
+fabricLoaderVersion = "0.16.14"
 fabricApiVersion = "0.100.1+1.21"
 fabricLangKotlinVersion = "1.11.0+kotlin.2.0.0"
 license = "MIT"
@@ -15,7 +15,7 @@ modules = []
 modDescription = "Changes Villager Types to use Tags instead of just Biomes!"
 # Modmenu badges, values can be: [ library, deprecated ]
 badges = []
-disableKotlin = false
+disableKotlin = true
 
 [mappings]
 # You have 7 mapping types

@@ -2,9 +2,7 @@
 	"required": true,
 	"package": "com.theendercore.biome_tag_villagers.mixin",
 	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"VillagerTypeMixer"
-	],
+	"mixins": [ "VillagerTypeMixin" ],
 	"injectors": {
 		"defaultRequire": 1
 	}
