@@ -1,0 +1,2 @@
+- improved mixin compatibility
+- changed how types are gotten so modded villager types have a fallback

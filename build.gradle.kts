@@ -88,7 +88,7 @@ uploadConfig {
     modrinthId = "Ah3WA8lg"
     curseId = "912044"
 
-    changeLog = "- 21 update"
+    changeLog = File("./changelog.md").readText()
     // FabricApi
     modrinthDependency("P7dR8mSH", uploadConfig.REQUIRED)
     curseDependency("fabric-api", uploadConfig.REQUIRED)
