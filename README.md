@@ -13,27 +13,25 @@ If a biome is in multiple tag lists, it will randomize between the two.
 The mod has only server side config in the format of tags. It adds 6 new tags for each villager type (eg. snowy, taiga,
 savanna). This is just the standard minecraft biome tag.
 
-The Example datapack can be found [here](https://github.com/theendercore/BiomeTagVillagers/tree/master/example).
+The Example datapack can be found [here](https://github.com/theendercore/BiomeTagVillagers/tree/21.x/example).
 
 ### For Mod Developers
 If you are a mod developer adding new villager types. You will just want to add the villager types to the map
-with `addType`.
+with `BiomeTagVillagers.addType(TAG_HERE, TYPE_HERE)`, or see example [here](https://github.com/theendercore/BiomeTagVillagers/blob/21.x/example/ExampleMod.java).
 
 Maven repository:
 
 ```gradle
 repositories {
     maven {
-        name = "Modrinth"
-        url = "https://api.modrinth.com/maven"
+        url = "https://teamvoided.org/releases"
     }
 }
 ```
-
 Dependency:
 
 ```gradle
-    modImplementation "maven.modrinth:biome-tag-villagers:1.0.0"
+    modImplementation "com.theendercore:biome_tag_villagers:1.3.0"
 ```
 
 
