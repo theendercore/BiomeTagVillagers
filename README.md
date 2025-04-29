@@ -7,7 +7,7 @@ to determine what variant a villager will be in what biome.
 If a biome is in multiple tag lists, it will randomize between the two.
 
 ### Dependencies
-- Fabric api (Turns out you need this to run the mod initializer)
+- Fabric api
 
 ### Configuration
 The mod has only server side config in the format of tags. It adds 6 new tags for each villager type (eg. snowy, taiga,
@@ -34,6 +34,6 @@ Dependency:
     modImplementation "com.theendercore:biome_tag_villagers:1.3.0"
 ```
 
-
+[![Kinetic Partner Banner](https://cdn.modrinth.com/data/cached_images/b1a434cb888cd675034184ac4173bb6e379e5f3a.png) Click on the banner or here to support me and my projects! :)](https://billing.kinetichosting.net/aff.php?aff=853)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M7DWJCH)
