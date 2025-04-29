@@ -1,28 +1,30 @@
 projectTitle = "Biome Tag Villagers"
 modId = "biome_tag_villagers"
+group = "com.theendercore"
+modVersion = "1.2.0"
 githubRepo = "theendercore/BiomeTagVillagers"
 discordServerInviteId = "KZ5Q364hEg"
-authors = [ "TheEnderCore" ,"DuskAutumnStorm" ]
+authors = ["TheEnderCore", "DuskAutumnStorm"]
 majorMinecraftVersion = "1.21"
 minecraftVersion = "1.21"
 fabricLoaderVersion = "0.15.11"
 fabricApiVersion = "0.100.1+1.21"
 fabricLangKotlinVersion = "1.11.0+kotlin.2.0.0"
 license = "MIT"
-modules = [ ]
+modules = []
 modDescription = "Changes Villager Types to use Tags instead of just Biomes!"
 # Modmenu badges, values can be: [ library, deprecated ]
-badges = [ ]
+badges = []
 disableKotlin = false
 
 [mappings]
-    # You have 7 mapping types
-    # MOJANG: The official Mojang mappings
-    # YARN: Yarn mappings
-    # PARCHMENT: Parchment mappings
-    # QUILT: Quilt mappings
-    # MOJPARCH: Parchment layered on top of the official Mojang mappings
-    # MOJYARN: Yarn layered on top of the official Mojang mappings
-    # CUSTOM: Custom mapping jar. Uses mappings version as file location
-    type = "YARN"
-    version = "1.21+build.1"
+# You have 7 mapping types
+# MOJANG: The official Mojang mappings
+# YARN: Yarn mappings
+# PARCHMENT: Parchment mappings
+# QUILT: Quilt mappings
+# MOJPARCH: Parchment layered on top of the official Mojang mappings
+# MOJYARN: Yarn layered on top of the official Mojang mappings
+# CUSTOM: Custom mapping jar. Uses mappings version as file location
+type = "YARN"
+version = "1.21+build.1"
