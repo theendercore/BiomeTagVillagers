@@ -1,14 +1,14 @@
 projectTitle = "Biome Tag Villagers"
 modId = "biome_tag_villagers"
 group = "com.theendercore"
-modVersion = "1.3.0"
+modVersion = "1.4.0"
 githubRepo = "theendercore/BiomeTagVillagers"
 discordServerInviteId = "KZ5Q364hEg"
 authors = ["TheEnderCore", "DuskAutumnStorm"]
-majorMinecraftVersion = "1.21"
-minecraftVersion = "1.21"
+majorMinecraftVersion = "1.21.5"
+minecraftVersion = "1.21.5"
 fabricLoaderVersion = "0.16.14"
-fabricApiVersion = "0.100.1+1.21"
+fabricApiVersion = "0.121.0+1.21.5"
 fabricLangKotlinVersion = "1.11.0+kotlin.2.0.0"
 license = "MIT"
 modules = []
@@ -27,4 +27,4 @@ disableKotlin = true
 # MOJYARN: Yarn layered on top of the official Mojang mappings
 # CUSTOM: Custom mapping jar. Uses mappings version as file location
 type = "YARN"
-version = "1.21+build.1"
+version = "1.21.5+build.1"

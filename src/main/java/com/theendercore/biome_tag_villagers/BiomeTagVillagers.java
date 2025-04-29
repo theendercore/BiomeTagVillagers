@@ -2,6 +2,7 @@ package com.theendercore.biome_tag_villagers;
 
 import com.google.common.collect.Maps;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
@@ -24,7 +25,7 @@ public class BiomeTagVillagers implements ModInitializer {
     public static final TagKey<Biome> VILLAGER_SNOWY = key("villager_snowy");
     public static final TagKey<Biome> VILLAGER_SWAMP = key("villager_swamp");
     public static final TagKey<Biome> VILLAGER_TAIGA = key("villager_taiga");
-    private static final Map<TagKey<Biome>, VillagerType> BIOME_TAG_TO_TYPE = Util.make(Maps.newHashMap(), map -> {
+    private static final Map<TagKey<Biome>, RegistryKey<VillagerType>> BIOME_TAG_TO_TYPE = Util.make(Maps.newHashMap(), map -> {
         map.put(VILLAGER_DESERT, DESERT);
         map.put(VILLAGER_JUNGLE, JUNGLE);
         map.put(VILLAGER_SAVANNA, SAVANNA);
@@ -39,11 +40,11 @@ public class BiomeTagVillagers implements ModInitializer {
     }
 
     @SuppressWarnings("unused")
-    static void addType(TagKey<Biome> tag, VillagerType type) {
+    static void addType(TagKey<Biome> tag, RegistryKey<VillagerType> type) {
         BIOME_TAG_TO_TYPE.put(tag, type);
     }
 
-    public static Map<TagKey<Biome>, VillagerType> getBiomeTagToType() {
+    public static Map<TagKey<Biome>, RegistryKey<VillagerType>> getBiomeTagToType() {
         return BIOME_TAG_TO_TYPE;
     }
 
