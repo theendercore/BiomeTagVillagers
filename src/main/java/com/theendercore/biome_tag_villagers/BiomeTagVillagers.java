@@ -40,7 +40,7 @@ public class BiomeTagVillagers implements ModInitializer {
     }
 
     @SuppressWarnings("unused")
-    static void addType(TagKey<Biome> tag, RegistryKey<VillagerType> type) {
+    public static void addType(TagKey<Biome> tag, RegistryKey<VillagerType> type) {
         BIOME_TAG_TO_TYPE.put(tag, type);
     }
 
